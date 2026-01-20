@@ -1,0 +1,4 @@
+% de Imp. Neto = DIVIDE(
+    SUM('Ventas Total'[ImporteVendidoNeto]),
+    CALCULATE(SUM('Ventas Total'[ImporteVendidoNeto]), ALLSELECTED('Ventas Total'))
+) * 1
