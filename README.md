@@ -77,5 +77,5 @@ As a first step, data was extracted from a transactional database hosted on SQL 
 
 SQL scripts were developed to build the base dataset used as the data source for analysis and visualization in Power BI.
 
-The scripts used in this stage can be found in the following folder:
+The scripts used in this stage can be found in the following folder: [sql](https://github.com/Alannoo6/sales-management-dashboard/tree/main/sql)
 
