@@ -1,105 +1,81 @@
-## Descripción general 🧾
+# Sales Management Dashboard (Power BI) – Commercial Performance Analysis
 
-Este proyecto presenta un tablero interactivo en Power BI para el análisis integral de la gestión comercial del negocio de Marcas Deportivas de Brandteam, basado en datos reales del período 2021–2025.
+## Overview
+This project presents an interactive Power BI dashboard for comprehensive commercial performance analysis of Brandteam’s Sports Brands business unit, based on real sales data from 2021 to 2025.
 
-El dashboard permite analizar el desempeño de ventas por cliente, vendedor, producto, marca y región, facilitando la toma de decisiones basada en datos para equipos comerciales y de gestión.
+The dashboard enables analysis of sales performance by client, salesperson, product, brand and region, supporting data-driven decision making for commercial and management teams.
 
-Incluye rankings de clientes y vendedores, análisis por marca y familia de productos, distribución geográfica y filtros dinámicos para explorar oportunidades de mejora y drivers de crecimiento.
+It includes client and salesperson rankings, brand and product family analysis, geographic distribution and dynamic filters to identify growth drivers and optimization opportunities.
 
------------
-
-(EN)
-
-## Overview 🧾
-
-This project presents an interactive Power BI dashboard for comprehensive commercial performance analysis of Brandteam’s Sports Brands business unit, based on real sales data from 2021–2025.
-
-The dashboard enables analysis of sales by client, salesperson, product, brand, and region, supporting data-driven decision making for commercial and management teams.
-
-It includes client and salesperson rankings, brand and product family analysis, geographic distribution, and dynamic filters to identify growth drivers and optimization opportunities.
+> **Disclaimer:** All datasets, table names, business identifiers and sensitive information have been fully anonymized to preserve confidentiality and comply with corporate data protection policies. This repository is for demonstration purposes only.
 
 ---
 
-## Tecnologías utilizadas 💻
+## Business Problem
+Commercial teams require consolidated and reliable visibility into sales performance across multiple dimensions in order to:
 
-- SQL Server — extracción y modelado de datos.
-- Power BI — visualización y dashboards interactivos.
-- DAX — medidas y lógica de negocio para análisis avanzado.  
-- GitHub — versionado y documentación.
+- Identify top and underperforming clients and sales representatives  
+- Analyze product, brand and category performance  
+- Detect geographic trends and regional opportunities  
+- Support strategic planning and operational decision making  
 
----
-
-(EN)
-
-## Technologies Used 💻
-
-- SQL Server — data extraction and modeling.
-- Power BI — data visualization and interactive dashboards.
-- DAX — measures and business logic for advanced analytics. 
-- GitHub — version control and project documentation.
+This dashboard centralizes transactional sales data into a single analytical model to provide a unified and interactive reporting solution.
 
 ---
 
-## Objetivo del proyecto 📌
+## Project Objective
+Develop a management dashboard to monitor commercial performance, enabling the analysis of sales by client, salesperson, product, division and region.
 
-Construir un tablero de control para monitorear el desempeño comercial, permitiendo analizar ventas por cliente, vendedor, producto, división y región.
-
----
-
-(EN)
-
-## Project Objective 📌
-
-Develop a management dashboard to monitor commercial performance, enabling the analysis of sales by client, salesperson, product, division, and region.
+The objective is to provide a flexible analytical tool that allows business users to explore performance indicators, detect trends and support data-driven decisions.
 
 ---
 
-## Desarrollo del proyecto 🚀
+## Architecture & Data Flow
 
-### 1️⃣ Armado del dataset 
+The analytical workflow follows a standard BI pipeline:
 
-Como primer paso, se extrajo información desde una base de datos transaccional en SQL Server.
-Se desarrollaron scripts SQL para construir el dataset base utilizado como origen de datos para el análisis y la visualización en Power BI.
-Los scripts utilizados en esta etapa pueden consultarse en la carpeta: [SQL](./SQL)
+- Extract transactional sales data from SQL Server  
+- Transform and model data into an analytical dataset  
+- Build a semantic model with calculated measures using DAX  
+- Visualize KPIs and performance indicators in Power BI  
+
+This approach ensures data consistency between transactional systems and analytical reporting while maintaining scalable and reusable data models.
 
 ---
 
-(EN)
+## Key Features
+- Interactive dashboards with dynamic filters and slicers  
+- Client and salesperson ranking analysis  
+- Brand, product family and category performance views  
+- Geographic sales distribution and regional performance analysis  
+- Time-based analysis across multiple years (2021–2025)  
+- KPI monitoring for commercial performance  
 
-### 1️⃣ Dataset Preparation
+---
 
+## Business Impact
+This dashboard helps:
+
+- Improve visibility into commercial performance across multiple business dimensions  
+- Identify growth opportunities and underperforming segments  
+- Support sales strategy and territory planning  
+- Reduce manual reporting effort by centralizing analytics in a single platform  
+- Improve data quality and consistency for management reporting  
+
+---
+
+## Technologies Used
+- **SQL Server** — data extraction and dataset construction  
+- **Power BI** — data visualization and interactive dashboards  
+- **DAX** — measures and business logic for advanced analytics  
+- **GitHub** — version control and project documentation  
+
+---
+
+## Dataset Preparation
 As a first step, data was extracted from a transactional database hosted on SQL Server.
+
 SQL scripts were developed to build the base dataset used as the data source for analysis and visualization in Power BI.
-The scripts used in this stage can be found in the following folder: [SQL](./SQL)
 
----
+The scripts used in this stage can be found in the following folder:
 
-### 2️⃣ Medidas y lógica de negocio con DAX
-
-Se implementaron medidas DAX para el cálculo de indicadores clave y métricas de performance comercial.
-Las medidas desarrolladas pueden consultarse en la carpeta: [DAX](./DAX)
-
----
-
-(EN)
-
-### 2️⃣ DAX Measures and Business Logic 
-
-DAX measures were implemented to calculate key performance indicators and commercial performance metrics.
-The implemented measures can be found in the following folder: [DAX](./DAX)
-
----
-
-### 3️⃣ Desarrollo del tablero en Power BI
-
-El tablero final puede visualizarse en el siguiente enlace:
-👉 [Ver dashboard en Power BI](ACA_VA_TU_LINK) 📊
-
----
-
-(EN)
-
-### 3️⃣ Dashboard Development in Power BI
-
-The final dashboard can be viewed at the following link:
-👉 [View dashboard in Power BI](YOUR_LINK_HERE) 📊
