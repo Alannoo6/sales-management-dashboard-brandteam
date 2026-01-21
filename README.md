@@ -31,7 +31,6 @@ The objective is to provide a flexible analytical tool that allows business user
 ---
 
 ## Architecture & Data Flow
-
 The analytical workflow follows a standard BI pipeline:
 
 - Extract transactional sales data from SQL Server  
@@ -43,13 +42,12 @@ This approach ensures data consistency between transactional systems and analyti
 
 ---
 
-## Key Features
-- Interactive dashboards with dynamic filters and slicers  
-- Client and salesperson ranking analysis  
-- Brand, product family and category performance views  
-- Geographic sales distribution and regional performance analysis  
-- Time-based analysis across multiple years (2021–2025)  
-- KPI monitoring for commercial performance  
+## Dashboard Preview
+
+Below is a selected screenshot of the interactive Power BI dashboard.  
+All data has been anonymized for confidentiality and demonstration purposes.
+
+![Dashboard Overview](docs/dashboard_overview.png)
 
 ---
 
@@ -61,6 +59,16 @@ This dashboard helps:
 - Support sales strategy and territory planning  
 - Reduce manual reporting effort by centralizing analytics in a single platform  
 - Improve data quality and consistency for management reporting  
+
+---
+
+## Key Features
+- Interactive dashboards with dynamic filters and slicers  
+- Client and salesperson ranking analysis  
+- Brand, product family and category performance views  
+- Geographic sales distribution and regional performance analysis  
+- Time-based analysis across multiple years (2021–2025)  
+- KPI monitoring for commercial performance  
 
 ---
 
@@ -77,5 +85,4 @@ As a first step, data was extracted from a transactional database hosted on SQL 
 
 SQL scripts were developed to build the base dataset used as the data source for analysis and visualization in Power BI.
 
-The scripts used in this stage can be found in the following folder: [sql](https://github.com/Alannoo6/sales-management-dashboard/tree/main/sql)
-
+The scripts used in this stage can be found in the following folder:
